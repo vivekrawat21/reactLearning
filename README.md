@@ -21,3 +21,12 @@ No consistency in UI.
   BASS Apps (appwrite,firebase etc..)
   <h5>React is not a complete solution in most case (no seo,browser render of Js , no router)</h5>
 <h3>npx</h3> node package executer and <bold>npm </bold>is a utility (installer for installing library)
+<h5>
+    React strict mode is a safe mode for optimization... React.strict
+</h5>
+<h3>Components best praactices</h3>
+<p>component name should be  capatalize and the function name should be capatalize
+</p>
+<p>
+    in some libraries like vite/parcel etc some extra rules like component name with jsx must be included 
+</p>
