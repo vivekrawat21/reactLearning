@@ -20,3 +20,4 @@ No consistency in UI.
   classbase components(leagacy codebases)
   BASS Apps (appwrite,firebase etc..)
   <h5>React is not a complete solution in most case (no seo,browser render of Js , no router)</h5>
+<h3>npx</h3> node package executer and <bold>npm </bold>is a utility (installer for installing library)
