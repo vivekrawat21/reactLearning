@@ -1,2 +1,2 @@
 # reactLearning
-# learning react with hiteshChodhary
+learning react with hiteshChodhary
