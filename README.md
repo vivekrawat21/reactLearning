@@ -30,3 +30,9 @@ No consistency in UI.
 <p>
     in some libraries like vite/parcel etc some extra rules like component name with jsx must be included 
 </p>
+<h2>why we call react a single page</h2>
+<p> it is because we are rendering only one root page no creating another html elemnts for that</p>
+<p>In the react we have two dependencies which are main React and React.dom </p>
+<p>React-dom creaetes a virtual dom called React.dom and compare it with the real dom and aafter comparing it change the specific element in the actual dom 
+    React-dom has its own component trees like in js-dom has its own element tree.. 
+</p>
