@@ -1,4 +1,3 @@
-import './App.css'
 import { useState,useCallback,useEffect,useRef } from 'react';
 
 function App() {
@@ -47,7 +46,7 @@ const copyPasswordToClipBoard =useCallback(()=>{
       />
       <button
       onClick={copyPasswordToClipBoard}
-      className=' bg-blue-700 px-3 py-0.5 shrink-0 text-white'>
+      className=' bg-blue-700 hover:bg-blue-500 px-3 py-0.5 shrink-0 text-white'>
         copy
       </button>
 
