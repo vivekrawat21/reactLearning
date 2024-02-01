@@ -36,3 +36,8 @@ No consistency in UI.
 <p>React-dom creaetes a virtual dom called React.dom and compare it with the real dom and aafter comparing it change the specific element in the actual dom 
     React-dom has its own component trees like in js-dom has its own element tree.. 
 </p>
+<h3>UI updation control :
+</h3>
+<p>React control the ui updation using hooks or we can also say that react reacts to the ui updation 
+    there are various types of hooks in the react whch are usestate useContext etc
+</p>
