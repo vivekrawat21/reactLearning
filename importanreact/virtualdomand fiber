@@ -1,0 +1,15 @@
+see main.js file
+What createRoot method do : it create dom like structure 
+in dom after a reload the whole dom structure is repainted and that's why we see a loading thing in the web page
+but in the virtual dom we can trace the tree and update the dom  only for the some elements which we needed.
+React fiber Archietecture:
+React Fiber is an ogoing reimplementation of React's core algorithm / or virtual dom
+Key features of fibre:
+ability to pause ,abort, or reuse works aas new update,and new concurrent primitives
+what is reconciliation : the algorithm React uses to diff one tree with another to determine which part to be changed. Or simply compare dom with virtual dom or fiber
+recoccilaition is the algorithm behing wha  is popularly understood as virtualdom..
+fiber is a ground-up rewrite of the reconciler, the high level algorithm
+
+why we intorduce key when we map :
+Diffin of lists is perfomed using keys. Keys should be stable predictable and unique.
+

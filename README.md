@@ -42,4 +42,4 @@ No consistency in UI.
     there are various types of hooks in the react whch are usestate useContext etc
 </p>
 <h3>Virtual dom</h3>
-<p>As name suggested virtualdom it is a dom created by the react</p>
+<p>As name suggested virtualdom it is a dom created by the react it use fiber algorthim and reconciling  </p>
