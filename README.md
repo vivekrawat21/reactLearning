@@ -41,3 +41,5 @@ No consistency in UI.
 <p>React control the ui updation using hooks or we can also say that react reacts to the ui updation 
     there are various types of hooks in the react whch are usestate useContext etc
 </p>
+<h3>Virtual dom</h3>
+<p>As name suggested virtualdom it is a dom created by the react</p>
