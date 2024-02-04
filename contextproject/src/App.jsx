@@ -1,6 +1,14 @@
+import Login from "./components/Login"
+import Profile from "./components/Profile"
+import UserContextProvider from "./context/UserContextProvider"
+
 function App() {
   return (
-    <div>App</div>
+  <UserContextProvider>
+    <Login />
+   <Profile/>
+  </UserContextProvider>
+ 
   )
 }
 
