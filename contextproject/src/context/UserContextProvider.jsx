@@ -3,6 +3,7 @@ import React from "react";
 import UserContext from "./userContext";
 
 
+// eslint-disable-next-line react/prop-types
 const UserContextProvider= ({children})=>{
     const [user,setUser] = React.useState(null)
     return(
