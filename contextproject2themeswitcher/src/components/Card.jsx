@@ -11,6 +11,7 @@ function Card() {
                     </h5>
                 </a>
                 <div className="flex items-center mt-2.5 mb-5">
+                    {/* to-do added */}
                     <svg
                         className="w-4 h-4 text-yellow-300 mr-1"
                         aria-hidden="true"
