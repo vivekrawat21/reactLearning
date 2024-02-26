@@ -1,14 +1,19 @@
-
 function App() {
   const username = "vivek rawat";
- return(
-  <>
-  <div>
-    <h1>hello world{username /*We can only use evaluated expression here because actually the variable injected after creating the whole tree in the main.jsx it passes last of the function createElement of react 
+  return (
+    <>
+      <div>
+        <h1>
+          hello world
+          {
+            username /*We can only use evaluated expression here because actually the variable injected after creating the whole tree in the main.jsx it passes last of the function createElement of react 
     and it is like a object and we cannnot make a object a statement so we only have to pass the evaluated expression means which value has been previously evaluated and cannot be the if or else if statements 
-     */}</h1></div>
+     */
+          }
+        </h1>
+      </div>
 
-     {/* summary of this video : first we have created an dom like structure using custom react 
+      {/* summary of this video : first we have created an dom like structure using custom react 
      so  after we make a modular and more reusable approach of that using loops which is modular approact
      after we make   that custom reder method we created we pass the value with that specific approach and get the result
      so as we know that app.jsx is a nethod can't we just pass the method directly into the react rendor method we can obviously do that
@@ -19,10 +24,8 @@ function App() {
       after that we see that how a varible is injected in the createReactElelment function it is injected after the children and  properties pases to the fuction and because it is an object we cannot pass some  unevaluated value llike if else statement we can only pass the pre evaluated expression 
       we can directly call the jsx element and we can do directly manipulation without even calling the render but this thing sometimes tricky and have many things inside that deep so we do not prefer to do that 
       All this thing is present in the react open source... repositry we can see that there */}
-     
-  </>
- )
- 
+    </>
+  );
 }
 
-export default App
+export default App;
