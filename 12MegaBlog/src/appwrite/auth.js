@@ -3,7 +3,7 @@ import {Client , Account, ID} from "appwrite";
 
 export class AuthService{
     client = new Client();
-    account 
+    account ;
     constructor(){
         this.client 
         .setEndpoint(conf.appwriteUrl)
@@ -14,7 +14,7 @@ export class AuthService{
 
     async createAccount({email, password,name}){
       try{
-      const userAccount =  await this.account.create(ID.unique,email,password,name)
+      const userAccount =  await this.account.create(ID.unique(),email,password,name)
       if(userAccount){
         // call another method if user created directly login it
         return this.login({email,password});
@@ -45,7 +45,7 @@ export class AuthService{
             return await this.account.get();
         }
         catch(e){
-            throw e;
+           console.log("Appwrite servic :: getCurrentUser :: error",e);
         }
 
         return null;

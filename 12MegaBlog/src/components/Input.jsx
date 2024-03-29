@@ -3,7 +3,6 @@ import React,{useId} from 'react'
 export const Input = React.forwardRef((
     {
         label,
-        id,
         type = 'text',
         className = '',
         ...props

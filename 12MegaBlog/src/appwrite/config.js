@@ -1,5 +1,5 @@
 import conf from "../conf/conf.js";
-import {Client , ID , Databases , Storage , Query,Account} from 'appwrite';
+import {Client , ID , Databases , Storage , Query} from 'appwrite';
 
 export class Service{
     client = new Client();
@@ -10,7 +10,6 @@ export class Service{
             this.client 
             .setEndpoint(conf.appwriteUrl)
             .setProject(conf.appwriteProjectId);
-            this.account = new Account(this.client);
             this.databases = new Databases(this.client);
             this.bucket = new Storage(this.client);
         
@@ -18,15 +17,15 @@ export class Service{
 
     }
 
-    async createPost({slug, title, content,featuredImage ,status , userId}){
+    async createPost({ title,slug , content,featuredImage ,status , userId}){
         try {
-            return await this.databases.createDocument(conf.appwriteDatabaseId,conf.appwriteCollectionId,slug,  {
+            return await this.databases.createDocument(conf. appwriteDatabaseId,conf.appwriteCollectionId,slug,  {
                 title,
                 content,
                 featuredImage,
                 status,
                 userId,
-                createdAt: Date.now()
+                
             })
         } catch (error){
             console.log("Appwrite sevice :: createPost :: error",error);
@@ -40,7 +39,7 @@ export class Service{
             title,
             content,
             featuredImage,
-            status
+            status,
            } ) 
         } catch (error) {
             console.log("Appwrite sevice :: updatePost :: error",error);
@@ -83,7 +82,7 @@ export class Service{
 
     async uploadFile(file){
         try {
-            return await  this.bucket.createFile(conf.appwriteBucketId,ID.unique(),file);
+            return await  this.bucket.createFile(conf.appwriteBucketId,ID.unique(),file)
         } catch (error) {
             console.log("Appwrite sevice :: fileUpload :: error",error);
             return false;
@@ -92,7 +91,9 @@ export class Service{
 
     async deleteFile(fileId){
         try {
-            return this.bucket.deleteFile(conf.appwriteBucketId,fileId);
+            await this.bucket.deleteFile(conf.appwriteBucketId,fileId);
+            return true;
+        
         } catch (error) {
             console.log("Appwrite sevice :: fileDelete :: error",error);
             return false;
